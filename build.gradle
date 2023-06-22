@@ -1,0 +1,62 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.google.protobuf:protobuf-gradle-plugin:0.8.18'
+    }
+}
+
+plugins {
+    id 'java'
+}
+
+apply plugin: 'com.google.protobuf'
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    maven { url "https://packages.confluent.io/maven/" }
+}
+
+java {
+    sourceCompatibility = '17'
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    // confluent for serialization deserialization
+    implementation 'io.confluent:kafka-protobuf-serializer:6.2.0'
+    implementation 'io.confluent:kafka-schema-registry-client:6.2.0'
+    // https://mvnrepository.com/artifact/org.apache.kafka/kafka-clients
+    implementation 'org.apache.kafka:kafka-clients:3.5.0'
+    // protoBuf to java code
+    implementation 'com.google.protobuf:protobuf-gradle-plugin:0.9.2'
+    implementation 'com.google.protobuf:protobuf-java:3.19.6'
+    implementation 'com.google.protobuf:protobuf-java-util:3.19.4'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+protobuf {
+    protoc {
+        artifact = 'com.google.protobuf:protoc:3.19.4'
+    }
+    plugins {
+        grpc {
+            artifact = 'io.grpc:protoc-gen-grpc-java:1.40.1'
+        }
+    }
+    generateProtoTasks {
+        all().each { task ->
+            task.plugins {
+                grpc {}
+            }
+        }
+    }
+    generatedFilesBaseDir = "$projectDir/src/ProtoGen"
+}

@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Data;
+
+option java_multiple_files = true;
+
+
+message User {
+  string id = 1;
+  string firstName = 2;
+  string lastName = 3;
+  string email = 4;
+  string age = 5;
+  string password = 6;
+  string address = 7;
+  string phone = 8;
+  string bio = 9;
+}
