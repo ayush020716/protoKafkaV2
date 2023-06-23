@@ -1,0 +1,26 @@
+
+n
+java:S1871?"LThis branch's code block is the same as the block for the branch on line 57.(Œ­õ¤øÿÿÿÿ8ŽÒÉ”Ž1
+~
+java:S6201M"\Replace this instanceof check and cast with 'instanceof ParameterizedType parameterizedtype'(ŽžÓ®ÿÿÿÿÿ8”ÒÉ”Ž1
+B
+java:S1659š"$Declare "fields" on a separate line.(öþ×û8ŸÒÉ”Ž1
+
+java:S6201Û"\Replace this instanceof check and cast with 'instanceof ParameterizedType parameterizedtype'(ûðÝ“øÿÿÿÿ8¦ÒÉ”Ž1
+u
+java:S3776•"RRefactor this method to reduce its Cognitive Complexity from 22 to the 15 allowed.(Ù©Ÿ‹ùÿÿÿÿ8¬ÒÉ”Ž1
+y
+java:S6201œ"\Replace this instanceof check and cast with 'instanceof ParameterizedType parameterizedtype'(Ú¸Òm8¯ÒÉ”Ž1
+y
+java:S6201¸"\Replace this instanceof check and cast with 'instanceof ParameterizedType parameterizedtype'(¸Ä‹88²ÒÉ”Ž1
+V	java:S106Ù"9Replace this use of System.out or System.err by a logger.(ÇÙêë8µÒÉ”Ž1
+y
+java:S6201÷"\Replace this instanceof check and cast with 'instanceof ParameterizedType parameterizedtype'(¸Ä‹88¸ÒÉ”Ž1
+z
+java:S6201³"\Replace this instanceof check and cast with 'instanceof ParameterizedType parameterizedtype'(Š”é 8¾ÒÉ”Ž1
+z
+java:S6201À"\Replace this instanceof check and cast with 'instanceof ParameterizedType parameterizedtype'(Š”é 8¿ÒÉ”Ž1
+K
+java:S1659„"(Declare "superClass" on a separate line.(Þäýžÿÿÿÿÿ8ÅÒÉ”Ž1
+I
+java:S1075ù"&Remove this hard-coded path-delimiter.(éðÝõÿÿÿÿÿ8ÆÒÉ”Ž1
