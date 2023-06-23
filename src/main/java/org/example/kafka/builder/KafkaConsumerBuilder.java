@@ -1,4 +1,4 @@
-package org.example.kafka;
+package org.example.kafka.builder;
 
 import Data.User;
 import io.confluent.kafka.serializers.protobuf.KafkaProtobufDeserializer;
